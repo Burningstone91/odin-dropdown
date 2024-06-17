@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown {
+  width: 200px;
+  padding: 12px;
+  border: solid 1px;
+  background-color: rgb(0,0,0,0.5);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > i {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 12px;
+}
+
+.hidden {
+  display: none;
+}

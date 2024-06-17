@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Test Page</title>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-    <body>
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-    </body>
+  <header>
+    <div class="dropdown">
+      <div class="header">
+        <p>Header</p>
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <ul class="hidden">
+        <li>Entry 1</li>
+        <li>Entry 2</li>
+        <li>Entry 3</li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <div class="header">
+        <p>Header 2</p>
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <ul class="hidden">
+        <li>Entry 1</li>
+        <li>Entry 2</li>
+        <li>Entry 3</li>
+      </ul>
+    </div>
+  </header>
+
+  <body>
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+  </body>
 </html>
