@@ -1,11 +1,14 @@
 import "./styles.css";
 
-const dropDownHeader = document.querySelectorAll(".dropdown > .header > i");
+document.addEventListener("click", function (event) {
+  document.querySelectorAll(".dropdown-content").forEach(function (el) {
+    if (el !== event.target) el.classList.remove("show");
+  });
 
-[...dropDownHeader].forEach((header) => {
-  header.addEventListener("click", toggleDropdown);
+  if (event.target.matches(".dropdown-btn")) {
+    event.target
+      .closest(".dropdown")
+      .querySelector(".dropdown-content")
+      .classList.toggle("show");
+  }
 });
-
-function toggleDropdown(e) {
-  e.target.parentNode.nextElementSibling.classList.toggle("hidden");
-}
